@@ -53,10 +53,13 @@ img {
     font-weight: 700
 }
 .nav_lista{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem
+}
+.nav_lista.abierto{
+    display: flex;
 }
 .nav_lista a{
     display: block;
@@ -146,11 +149,15 @@ img {
     font-size: 0.875rem
 }
 @media (min-width: 768px){
+.menu-boton{
+    display: none;
+}
 .encabezado_contenido{
     flex-direction: row;
     justify-content: space-between
 }
 .nav_lista{
+    display: flex;
     flex-direction: row;
     gap: 0.25rem
 }
